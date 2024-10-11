@@ -16,9 +16,9 @@
     <div class="title">
       <span>MyPortfolio_</span>
     </div>
-    <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i> <!-- Añadir onclick para abrir/cerrar el menú -->
+    <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i> <!-- Add onclick to open/close the menu -->
 
-    <!-- Menú desplegable -->
+    <!-- Dropdown menu -->
     <nav class="menu" id="menu">
       <ul>
         <li><a href="about_me.html">About Me</a></li>
@@ -29,12 +29,25 @@
   </header>
 
   <main>
-    <section id="works">
-      <h2>My Works</h2>
-      <ul>
-        <li><a href="works/work1">Work 1</a></li>
-        <li><a href="works/work2">Work 2</a></li>
-      </ul>
+    <section class="introduction">
+      <div class="intro-text">
+        <h1>Hey, I'm Javier Guinot Almenar</h1>
+        <h2>Game Developer & Algorithms Passionate</h2>
+      </div>
+      <div class="filter-menu">
+        <a href="#" class="menu-link" data-filter="all">All</a>
+        <a href="#" class="menu-link" data-filter="unity">Unity</a>
+        <a href="#" class="menu-link" data-filter="unreal">Unreal</a>
+        <a href="#" class="menu-link" data-filter="own">Own</a>
+        <a href="#" class="menu-link" data-filter="other">Other</a>
+      </div>
+    </section>
+    <section class="project-previews" id="project-previews">
+      <div class="project" data-filter="unity">Unity Project 1</div>
+      <div class="project" data-filter="unity">Unity Project 2</div>
+      <div class="project" data-filter="unreal">Unreal Project 1</div>
+      <div class="project" data-filter="own">Own Project 1</div>
+      <div class="project" data-filter="other">Other Project 1</div>
     </section>
   </main>
 

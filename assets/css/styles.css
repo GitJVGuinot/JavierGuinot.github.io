@@ -14,15 +14,17 @@ body {
   padding: 0;
 }
 
+main {
+  margin-top: 60px;
+}
+
 header {
   background-color: #1e1e1e;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
-  /* Asegúrate de que esta línea esté presente */
   align-items: center;
   position: fixed;
-  /* Se mantiene fijo en la parte superior */
   top: 0;
   left: 0;
   width: 100%;
@@ -82,7 +84,7 @@ header {
 
 section {
   padding: 2rem;
-  max-width: 800px;
+  max-width: 80%;
   margin: 5rem auto 0 auto;
   /* Margen superior ajustado para evitar solapamiento con el header */
 }
@@ -235,6 +237,46 @@ form button:hover {
   margin: 15px 0;
 }
 
+/* Section containing the introduction text and filter menu */
+.introduction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Style for the intro text */
+.intro-text {
+  font-size: clamp(10px, 1.1vw, 20px);
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Filter menu styles */
+.filter-menu {
+  flex: 0 0 250px;
+  text-align: right;
+}
+
+.project-previews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px;
+}
+
+.project {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  padding: 20px;
+  border: 1px solid #5a5a5a;
+  width: 350px;
+  height: 200px;
+  box-sizing: border-box;
+}
+
 /* Custom scrollbar for Webkit browsers (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
   width: 12px;
@@ -290,4 +332,5 @@ form button:hover {
   footer p {
     font-size: 0.75rem;
   }
+
 }

@@ -44,3 +44,31 @@ function sendEmail(event) {
       alert('Error sending email, please try again.');
     });
 }
+
+// Function to filter projects based on selected filter
+function filterProjects(filter) {
+  const projects = document.querySelectorAll('.project');
+  projects.forEach(project => {
+    // Get the filter data attribute of the project
+    const projectFilter = project.getAttribute('data-filter');
+
+    // Show or hide the project based on the filter
+    if (filter === 'all' || projectFilter === filter) {
+      project.style.display = 'block'; // Show the project
+    } else {
+      project.style.display = 'none'; // Hide the project
+    }
+  });
+}
+
+// Add event listeners to filter links
+document.querySelectorAll('.filter-menu .menu-link').forEach(link => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent the default anchor behavior
+    const filter = this.getAttribute('data-filter'); // Get the filter from the clicked link
+    filterProjects(filter); // Call the filter function
+  });
+});
+
+// Initially show all projects
+filterProjects('all');
