@@ -18,14 +18,31 @@
   </header>
 
   <section id="contact">
-    <!-- El cuerpo estará vacío por ahora -->
+    <h2>Contact Me</h2>
+    <form id="contact-form" onsubmit="sendEmail(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required autocomplete="name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required autocomplete="email">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
   </section>
 
   <footer>
     <div class="contact-info">
+      <a href="tel:+34642187996">
+        <i class="fas fa-phone"></i> +34 642 187 996
+      </a>
       <a href="mailto:linceasiatico@gmail.com" target="_blank">
         <i class="fas fa-envelope"></i> linceasiatico@gmail.com
       </a>
+    </div>
+    <div class="contact-info">
       <a href="https://github.com/GitJVGuinot" target="_blank">
         <i class="fab fa-github"></i> GitJVGuinot
       </a>
@@ -33,10 +50,24 @@
         <i class="fab fa-linkedin"></i> Javier Guinot
       </a>
     </div>
+    <div class="contact-info">
+      <a href="https://www.google.com/maps/search/?api=1&query=Valencia" target="_blank">
+        <i class="fas fa-map-marker-alt"></i> Valencia, Comunidad Valenciana
+      </a>
+    </div>
     <p>&copy; 2024 Javier Guinot</p>
   </footer>
 
+  <!-- Referencia a tu archivo script.js -->
   <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("hfgKxpOi2zv3KWsCP"); // Reemplaza con tu public key
+    })();
+  </script>
+
+
 </body>
 
 </html>
