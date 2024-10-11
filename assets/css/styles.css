@@ -1,0 +1,124 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu Mono', monospace;
+  background-color: #121212;
+  /* Fondo oscuro */
+  color: #e0e0e0;
+  /* Texto claro */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  /* Asegúrate de que esta línea esté presente */
+  align-items: center;
+  position: fixed;
+  /* Se mantiene fijo en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #bb86fc;
+}
+
+.menu-icon {
+  font-size: 1.8rem;
+  color: #bb86fc;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 5rem auto 0 auto;
+  /* Margen superior ajustado para evitar solapamiento con el header */
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+a {
+  color: #bb86fc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  color: #bbbbbb;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #bb86fc;
+}
+
+.contact-info i {
+  color: #bb86fc;
+}
+
+footer p {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+  header .title {
+    font-size: 1.2rem;
+  }
+
+  .menu-icon {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  footer p {
+    font-size: 0.75rem;
+  }
+}
