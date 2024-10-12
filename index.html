@@ -16,13 +16,20 @@
     <div class="title">
       <span>MyPortfolio_</span>
     </div>
-    <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i> <!-- Add onclick to open/close the menu -->
+    <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i>
 
-    <!-- Dropdown menu -->
+    <!-- Menú desplegable -->
     <nav class="menu" id="menu">
       <ul>
         <li><a href="about_me.html">About Me</a></li>
-        <li><a href="">Works</a></li>
+        <li class="has-submenu">
+          <a href="">Works</a> <!-- Opción Works con sublista -->
+          <ul class="submenu">
+            <li><a href="#">Work 1</a></li>
+            <li><a href="#">Work 2</a></li>
+            <li><a href="#">Work 3</a></li>
+          </ul>
+        </li>
         <li><a href="contact_me.html">Contact Me</a></li>
       </ul>
     </nav>
@@ -43,36 +50,36 @@
       </div>
     </section>
     <section class="project-previews" id="project-previews">
-      <div class="project" data-filter="unity">
+      <div class="project" data-filter="own">
         <video autoplay loop muted>
-          <source src="assets/videos/demo1.mp4" type="video/mp4">
+          <source src="assets/videos/GPU_Automata.webm" type="video/webm">
           Your browser does not support the video tag.
         </video>
         <div class="overlay">
-          <h3>Unity Project 1</h3>
-          <p>Language: C# | Tools: Unity</p>
+          <h3>GPU Automata</h3>
+          <p>C++ | OpenGL4.6 | Own Engine</p>
         </div>
       </div>
 
       <div class="project" data-filter="own">
         <video autoplay loop muted>
-          <source src="assets/videos/demo1.mp4" type="video/mp4">
+          <source src="assets/videos/GPU_Automata.webm" type="video/webm">
           Your browser does not support the video tag.
         </video>
         <div class="overlay">
-          <h3>Own Project 1</h3>
-          <p>Language: JavaScript | Tools: HTML/CSS</p>
+          <h3>GPU Automata</h3>
+          <p>C++ | OpenGL4.6 | Own Engine</p>
         </div>
       </div>
 
-      <div class="project" data-filter="unreal">
+      <div class="project" data-filter="own">
         <video autoplay loop muted>
-          <source src="assets/videos/demo1.mp4" type="video/mp4">
+          <source src="assets/videos/GPU_Automata.webm" type="video/webm">
           Your browser does not support the video tag.
         </video>
         <div class="overlay">
-          <h3>Unreal Project 1</h3>
-          <p>Language: C++ | Tools: Unreal Engine</p>
+          <h3>GPU Automata</h3>
+          <p>C++ | OpenGL4.6 | Own Engine</p>
         </div>
       </div>
     </section>
@@ -100,7 +107,9 @@
         <i class="fas fa-map-marker-alt"></i> Valencia, Comunidad Valenciana
       </a>
     </div>
-    <p>&copy; 2024 Javier Guinot</p>
+    <p>&copy; 2024 Javier Guinot. All rights reserved. All content, including text, images, and videos, on this
+      portfolio website is <br> the intellectual property of Javier Guinot and may not be reproduced, distributed, or
+      used without explicit permission.</p>
   </footer>
 
   <script src="assets/js/script.js"></script>

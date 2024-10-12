@@ -102,7 +102,9 @@ projects.forEach(project => {
   });
 
   project.addEventListener('mouseleave', () => {
-    video.muted = true;
+    if (userInteracted) {
+      video.muted = true;
+    }
   });
 });
 ///////////////////////////////////////////////////////////////////////////////
