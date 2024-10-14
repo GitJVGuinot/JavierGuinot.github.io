@@ -1,5 +1,4 @@
 Engines demo
-Fauno maze
-SDL Solar sistem
+Fauno maze (Alan)
 Visual path finding
 Asteroid (Alan)
