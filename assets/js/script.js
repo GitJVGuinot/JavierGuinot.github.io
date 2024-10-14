@@ -58,7 +58,7 @@ function filterProjects(filter) {
   projects.forEach(project => {
     const projectFilter = project.getAttribute('data-filter');
 
-    if (filter === 'all' || projectFilter === filter) {
+    if (filter === 'All' || projectFilter === filter) {
       project.style.display = 'block'; // Show the project
     } else {
       project.style.display = 'none'; // Hide the project
