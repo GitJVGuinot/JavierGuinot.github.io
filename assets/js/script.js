@@ -76,7 +76,7 @@ document.querySelectorAll('.filter-menu .menu-link').forEach(link => {
 });
 
 // Initially show all projects
-filterProjects('all');
+filterProjects('All');
 ///////////////////////////////////////////////////////////////////////////////
 
 // Video sound
